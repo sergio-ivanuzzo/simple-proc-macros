@@ -1,0 +1,18 @@
+[package]
+name = "simple"
+version = "6.0.1"
+edition = "2021"
+authors = ["Sergio Ivanuzzo <sergio.ivanuzzo@gmail.com>"]
+description = "Simple macros"
+
+[lib]
+name = "simple"
+path = "src/lib.rs"
+proc-macro = true
+
+[dependencies]
+# https://github.com/dtolnay/proc-macro-workshop#debugging-tips
+syn = { version = "2.0.49", features = ["full"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+structmeta = "0.3.0"

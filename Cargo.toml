@@ -1,0 +1,8 @@
+[package]
+name = "simple-proc-macro"
+version = "0.1.0"
+edition = "2021"
+authors = ["Sergio Ivanuzzo <sergio.ivanuzzo@gmail.com>"]
+
+[dependencies]
+simple = { path = "src/macros" }
